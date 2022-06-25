@@ -23,7 +23,7 @@
         "laravel/tinker": "^2.0",
         "laravelcollective/html": "^6.2",
         "league/flysystem-aws-s3-v3": " ^1.0",
-        "maatwebsite/excel": "^3.1",
+        "maatwebsite/excel": "^3.1.30",
         "munafio/chatify": "^1.2",
         "paragonie/constant_time_encoding": "^2.4",
         "paragonie/recaptcha": "^2.1",
