@@ -68,6 +68,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionBackupGateway(array $args = [])
  * @method \Aws\Batch\BatchClient createBatch(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionBatch(array $args = [])
+ * @method \Aws\BillingConductor\BillingConductorClient createBillingConductor(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionBillingConductor(array $args = [])
  * @method \Aws\Braket\BraketClient createBraket(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionBraket(array $args = [])
  * @method \Aws\Budgets\BudgetsClient createBudgets(array $args = [])
@@ -76,6 +78,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionChime(array $args = [])
  * @method \Aws\ChimeSDKIdentity\ChimeSDKIdentityClient createChimeSDKIdentity(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionChimeSDKIdentity(array $args = [])
+ * @method \Aws\ChimeSDKMediaPipelines\ChimeSDKMediaPipelinesClient createChimeSDKMediaPipelines(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionChimeSDKMediaPipelines(array $args = [])
  * @method \Aws\ChimeSDKMeetings\ChimeSDKMeetingsClient createChimeSDKMeetings(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionChimeSDKMeetings(array $args = [])
  * @method \Aws\ChimeSDKMessaging\ChimeSDKMessagingClient createChimeSDKMessaging(array $args = [])
@@ -146,6 +150,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionConfigService(array $args = [])
  * @method \Aws\Connect\ConnectClient createConnect(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionConnect(array $args = [])
+ * @method \Aws\ConnectCampaignService\ConnectCampaignServiceClient createConnectCampaignService(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionConnectCampaignService(array $args = [])
  * @method \Aws\ConnectContactLens\ConnectContactLensClient createConnectContactLens(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionConnectContactLens(array $args = [])
  * @method \Aws\ConnectParticipant\ConnectParticipantClient createConnectParticipant(array $args = [])
@@ -196,6 +202,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionEKS(array $args = [])
  * @method \Aws\EMRContainers\EMRContainersClient createEMRContainers(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionEMRContainers(array $args = [])
+ * @method \Aws\EMRServerless\EMRServerlessClient createEMRServerless(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionEMRServerless(array $args = [])
  * @method \Aws\Ec2\Ec2Client createEc2(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionEc2(array $args = [])
  * @method \Aws\Ecr\EcrClient createEcr(array $args = [])
@@ -240,6 +248,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionFraudDetector(array $args = [])
  * @method \Aws\GameLift\GameLiftClient createGameLift(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionGameLift(array $args = [])
+ * @method \Aws\GameSparks\GameSparksClient createGameSparks(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionGameSparks(array $args = [])
  * @method \Aws\Glacier\GlacierClient createGlacier(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionGlacier(array $args = [])
  * @method \Aws\GlobalAccelerator\GlobalAcceleratorClient createGlobalAccelerator(array $args = [])
@@ -362,6 +372,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionMacie(array $args = [])
  * @method \Aws\Macie2\Macie2Client createMacie2(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionMacie2(array $args = [])
+ * @method \Aws\MainframeModernization\MainframeModernizationClient createMainframeModernization(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionMainframeModernization(array $args = [])
  * @method \Aws\ManagedBlockchain\ManagedBlockchainClient createManagedBlockchain(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionManagedBlockchain(array $args = [])
  * @method \Aws\ManagedGrafana\ManagedGrafanaClient createManagedGrafana(array $args = [])
@@ -436,6 +448,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionPinpointEmail(array $args = [])
  * @method \Aws\PinpointSMSVoice\PinpointSMSVoiceClient createPinpointSMSVoice(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionPinpointSMSVoice(array $args = [])
+ * @method \Aws\PinpointSMSVoiceV2\PinpointSMSVoiceV2Client createPinpointSMSVoiceV2(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionPinpointSMSVoiceV2(array $args = [])
  * @method \Aws\Polly\PollyClient createPolly(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionPolly(array $args = [])
  * @method \Aws\Pricing\PricingClient createPricing(array $args = [])
@@ -596,6 +610,8 @@ namespace Aws;
  * @method \Aws\MultiRegionClient createMultiRegionfinspace(array $args = [])
  * @method \Aws\imagebuilder\imagebuilderClient createimagebuilder(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionimagebuilder(array $args = [])
+ * @method \Aws\ivschat\ivschatClient createivschat(array $args = [])
+ * @method \Aws\MultiRegionClient createMultiRegionivschat(array $args = [])
  * @method \Aws\kendra\kendraClient createkendra(array $args = [])
  * @method \Aws\MultiRegionClient createMultiRegionkendra(array $args = [])
  * @method \Aws\mgn\mgnClient createmgn(array $args = [])
@@ -605,7 +621,7 @@ namespace Aws;
  */
 class Sdk
 {
-    const VERSION = '3.212.7';
+    const VERSION = '3.228.3';
 
     /** @var array Arguments for creating clients */
     private $args;

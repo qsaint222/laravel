@@ -1161,15 +1161,7 @@ class Router implements BindingRegistrar, RegistrarContract
     {
         return $this->current() ? $this->current()->getName() : null;
     }
-    /**
-     * Get the current route name.
-     *
-     * @return string|null
-     */
-    public function getCourant()
-    {
-        return $this->current() ? $this->current()->getName() : null;
-    }
+
     /**
      * Alias for the "currentRouteNamed" method.
      *

