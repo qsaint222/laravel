@@ -1,0 +1,10 @@
+[2022-06-25 15:22:15] local.ERROR: There are no commands defined in the "passport" namespace. {"exception":"[object] (Symfony\\Component\\Console\\Exception\\NamespaceNotFoundException(code: 0): There are no commands defined in the \"passport\" namespace. at C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\vendor\\symfony\\console\\Application.php:648)
+[stacktrace]
+#0 C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\vendor\\symfony\\console\\Application.php(699): Symfony\\Component\\Console\\Application->findNamespace()
+#1 C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\vendor\\symfony\\console\\Application.php(259): Symfony\\Component\\Console\\Application->find()
+#2 C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\vendor\\symfony\\console\\Application.php(171): Symfony\\Component\\Console\\Application->doRun()
+#3 C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\vendor\\laravel\\framework\\src\\Illuminate\\Console\\Application.php(94): Symfony\\Component\\Console\\Application->run()
+#4 C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(129): Illuminate\\Console\\Application->run()
+#5 C:\\Users\\John Esparagoza\\Downloads\\LaravelPage\\main_file\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle()
+#6 {main}
+"} 
